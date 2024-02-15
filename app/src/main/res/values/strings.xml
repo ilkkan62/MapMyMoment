@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">OneNote</string>
+    <string name="login">Login</string>
+    <string name="signed_in">Signed-In</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_message">Message</string>
+    <string name="add">Add</string>
+    <string name="save">Save</string>
+    <string name="note_saved">Note saved</string>
+    <string name="delete">Delete</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="delete_message">Do you really want to delete this note?</string>
+</resources>
