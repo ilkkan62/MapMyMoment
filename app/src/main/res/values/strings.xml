@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OneNote</string>
+    <string name="app_name">MapMyMoment</string>
     <string name="login">Login</string>
     <string name="signed_in">Signed-In</string>
     <string name="hint_title">Title</string>
