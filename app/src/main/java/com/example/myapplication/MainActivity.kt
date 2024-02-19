@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val btnLogin = findViewById<Button>(R.id.btnLogin)
 
         // Rotate Icon
-        val ivIcon = findViewById<ImageView>(R.id.ivIcon)
+        val ivIcon = findViewById<ImageView>(R.id.imageview)
         val rotation = AnimationUtils.loadAnimation(this, R.anim.rotate)
         ivIcon.startAnimation(rotation)
 
