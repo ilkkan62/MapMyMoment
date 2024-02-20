@@ -11,9 +11,6 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
 import androidx.room.Room
-import android.location.Location
-import com.google.android.gms.location.FusedLocationProviderClient
-import com.google.android.gms.location.LocationServices
 
 class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
@@ -23,6 +20,7 @@ class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+
         setSupportActionBar(findViewById(R.id.tbMain))
 
         // Initialize Room DB
@@ -38,12 +36,6 @@ class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         lvNotes.adapter = adapter
         lvNotes.onItemClickListener = this
     }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list)
-
-        setSupportActionBar(findViewById(R.id.tbMain))
 
     override fun onResume() {
         super.onResume()
