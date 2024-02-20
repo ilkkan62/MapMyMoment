@@ -11,11 +11,16 @@ import android.widget.ArrayAdapter
 import android.widget.ListView
 import android.widget.TextView
 import androidx.room.Room
+import android.location.Location
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 
 class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     private var noteDao: NoteDao? = null
     private var adapter: NoteAdapter? = null
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+    private lateinit var locationList: MutableList<Location>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

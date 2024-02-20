@@ -8,5 +8,7 @@ import androidx.room.PrimaryKey
 data class Note (
     @ColumnInfo(name="title") var title: String,
     @ColumnInfo(name="message") var message: String,
-    @PrimaryKey(autoGenerate = true) val id: Int = 0
+    @ColumnInfo(name="latitude") var latitude: Double,
+    @ColumnInfo(name="longitude") var longitude: Double,
+    @PrimaryKey(autoGenerate = true) val id: Long = 0
 )

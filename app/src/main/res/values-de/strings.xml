@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OneNote</string>
+    <string name="app_name">MapMyMoment</string>
     <string name="login">Anmelden</string>
     <string name="signed_in">Angemeldet</string>
     <string name="hint_title">Titel</string>
@@ -12,4 +12,8 @@
     <string name="no">Nein</string>
     <string name="note_deleted">Notiz gelöscht</string>
     <string name="delete_message">Möchtest du diese Notiz wirklich löschen?</string>
+    <string name="location">Standort: Latitude, Longitude </string>
+    <string name="current_location">Standort: Latitude, Longitude </string>
+    <string name="location_denied">Standortfreigabe wurde abgelehnt</string>
+    <string name="location_null">Letzter bekannter Standort ist Null </string>
 </resources>

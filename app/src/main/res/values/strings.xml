@@ -12,4 +12,9 @@
     <string name="no">No</string>
     <string name="note_deleted">Note deleted</string>
     <string name="delete_message">Do you really want to delete this note?</string>
+    <string name="weather" translatable="false">MapMyMoment Wetter</string>
+    <string name="location">Location: Latitude, Longitude </string>
+    <string name="current_location">Current Location: Latitude, Longitude </string>
+    <string name="location_denied">Location permission has been denied</string>
+    <string name="location_null">Last known location is null</string>
 </resources>

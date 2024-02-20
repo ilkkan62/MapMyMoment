@@ -22,5 +22,5 @@ interface NoteDao {
     fun update(note: Note)
 
     @Query("SELECT * FROM notes WHERE id IS (:id)")
-    fun loadAllByIds(id: Int): List<Note>
+    fun loadAllByIds(id: Long): List<Note>
 }

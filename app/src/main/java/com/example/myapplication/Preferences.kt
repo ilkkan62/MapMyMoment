@@ -7,6 +7,8 @@ class Preferences constructor(context: Context) {
     companion object {
         const val PREFERENCES_NOTE_TITLE = "note_title"
         const val PREFERENCES_NOTE_MESSAGE = "note_message"
+        const val PREFERENCES_NOTE_LATITUDE = "note_latitude"
+        const val PREFERENCES_NOTE_LONGITUDE = "note_longitude"
         const val PREFERENCES_NAME = "preferences_note"
     }
 
@@ -26,5 +28,21 @@ class Preferences constructor(context: Context) {
 
     fun getNoteMessage(): String? {
         return preferences.getString(PREFERENCES_NOTE_MESSAGE, null)
+    }
+
+    fun setNoteLatitude(noteLatitude: String?) {
+        preferences.edit().putString(PREFERENCES_NOTE_LATITUDE, noteLatitude).apply()
+    }
+
+    fun getNoteLatitude(): String? {
+        return preferences.getString(PREFERENCES_NOTE_LATITUDE, null)
+    }
+
+    fun setNoteLongitude(noteLongitude: String?) {
+        preferences.edit().putString(PREFERENCES_NOTE_LONGITUDE, noteLongitude).apply()
+    }
+
+    fun getNoteLongitude(): String? {
+        return preferences.getString(PREFERENCES_NOTE_LONGITUDE, null)
     }
 }

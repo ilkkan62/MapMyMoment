@@ -8,13 +8,14 @@
     <style name="Theme.MyApplication" parent="Base.Theme.MyApplication" />
 
     <style name="Title">
-        <item name="android:textSize">32sp</item>
+        <item name="android:textSize">45sp</item>
         <item name="android:textColor">@color/black</item>
-        <item name="android:textStyle">bold</item>
+        <item name="android:textStyle">bold|italic</item>
+
     </style>
 
     <style name="Icon">
-        <item name="android:src">@drawable/ic_event_note</item>
+        <item name="android:src">@drawable/logo</item>
         <item name="android:layout_gravity">center</item>
     </style>
 
@@ -22,6 +23,16 @@
         <item name="android:layout_margin">20dp</item>
         <item name="android:text">@string/login</item>
         <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_ilkkan</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <style name="ButtonW">
+        <item name="android:layout_margin">120dp</item>
+        <item name="android:text">@string/weather</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:background">@drawable/button_ilkkan</item>
+        <item name="android:elevation">4dp</item>
     </style>
 
     <style name="ListItem">
@@ -36,6 +47,9 @@
         <item name="android:textStyle">bold</item>
     </style>
     <style name="ListItem.Message">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="ListItem.Location">
         <item name="android:textSize">16sp</item>
     </style>
 </resources>
