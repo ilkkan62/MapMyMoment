@@ -10,5 +10,6 @@ data class Note (
     @ColumnInfo(name="message") var message: String,
     @ColumnInfo(name="latitude") var latitude: Double,
     @ColumnInfo(name="longitude") var longitude: Double,
+    @ColumnInfo(name="image") var image: String,
     @PrimaryKey(autoGenerate = true) val id: Long = 0
 )

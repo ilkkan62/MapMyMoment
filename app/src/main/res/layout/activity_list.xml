@@ -7,16 +7,16 @@
     android:orientation="vertical"
     tools:context=".ListActivity">
 
-<androidx.appcompat.widget.Toolbar
-    android:id="@+id/tbMain"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/my_light_primary"
-    app:titleTextColor="@color/white"/>
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_light_primary"
+        app:titleTextColor="@color/white"/>
 
-<ListView
-    android:id="@+id/lvNotes"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    <ListView
+        android:id="@+id/lvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

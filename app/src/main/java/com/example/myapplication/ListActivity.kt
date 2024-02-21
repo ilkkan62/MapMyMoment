@@ -44,8 +44,6 @@ class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     override fun onResume() {
         super.onResume()
-
-        // Update View
         adapter?.notes = noteDao!!.getAll()
         adapter?.notifyDataSetChanged()
     }
@@ -69,5 +67,6 @@ class ListActivity : AppCompatActivity(), AdapterView.OnItemClickListener {
         val intent = Intent(this, NoteEditActivity::class.java)
         intent.putExtra("id", id)
         startActivity(intent)
+
     }
 }

@@ -15,12 +15,10 @@
         style="@style/Title"/>
 
     <ImageView
-        android:id="@+id/imageview"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginHorizontal="128dp"
-        android:layout_marginVertical="312dp"
-        android:src="@drawable/logo" />
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Icon"/>
 
 
     <Button

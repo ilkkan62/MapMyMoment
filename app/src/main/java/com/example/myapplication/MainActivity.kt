@@ -20,6 +20,9 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.net.HttpURLConnection
 import java.net.URL
+import android.view.View;
+import android.widget.ImageButton;
+import androidx.annotation.Nullable;
 
 class MainActivity : AppCompatActivity() {
 
@@ -37,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         fetchWeatherButton = findViewById(R.id.fetchWeatherButton)
 
         // Rotate Icon
-        val ivIcon = findViewById<ImageView>(R.id.imageview)
+        val ivIcon = findViewById<ImageView>(R.id.ivIcon)
         val rotation = AnimationUtils.loadAnimation(this, R.anim.rotate)
         ivIcon.startAnimation(rotation)
 
@@ -125,11 +128,13 @@ class MainActivity : AppCompatActivity() {
 
         override fun onPostExecute(result: String) {
             super.onPostExecute(result)
+
             val json = JSONObject(result)
             val main = json.getJSONObject("main")
             val temperature = main.getDouble("temp")
             val weather =
                 json.getJSONArray("weather").getJSONObject(0).getString("description")
+
 
             weatherText.text = "Aktuelles Wetter: $temperature°C, $weather"
         }
