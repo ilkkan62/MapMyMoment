@@ -1,10 +1,8 @@
 # MapMyMoment
-
 <p align="center">
   <img src="https://i.postimg.cc/V6q3nHbq/mmm2.png" height="800px" alt="TravelNotes"/>
 </p>
-
-MapMyMoment ist eine einfache Android-App, die es Benutzern ermöglicht, Notizen, Bilder mit spezifischen Standortdaten zu verknüpfen. 
+MapMyMoment ist eine einfache Android-App, die es Benutzern ermöglicht, Notizen und Bilder mit spezifischen Standortdaten zu verknüpfen. 
 Teilen auch Sie, den Moment ihres Lebens!
 
 ## Technologien
