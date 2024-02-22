@@ -7,6 +7,22 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/xml_text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="100sp"
+        android:text="Date" />
+
+    <TextView
+        android:id="@+id/weatherText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="120sp"
+        android:text="Wetter: -" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center"
@@ -16,11 +32,18 @@
 
     <ImageView
         android:id="@+id/ivIcon"
+        style="@style/Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="186dp" />
+
+    <Button
+        android:id="@+id/fetchWeatherButton"
+        style="@style/ButtonW"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        style="@style/Icon"/>
-
-
+        android:layout_gravity="center|bottom"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp" />
     <Button
         android:id="@+id/myButton"
         style="@style/Button"
@@ -29,22 +52,6 @@
         android:layout_gravity="center_horizontal|bottom"
         android:layout_marginBottom="20dp"
         android:elevation="20dp" />
-
-    <TextView
-        android:id="@+id/weatherText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginBottom="70dp"
-        android:elevation="24dp"
-        android:text="Wetter: -" />
-
-    <Button
-        android:id="@+id/fetchWeatherButton"
-        style="@style/ButtonW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom" />
 
 
 </FrameLayout>

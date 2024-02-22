@@ -34,6 +34,8 @@
         android:layout_margin="@dimen/margin_medium"
         android:text="@string/current_location" />
 
+
+
     <ImageView
         android:id="@+id/ivNoteImage"
         android:layout_width="250dp"

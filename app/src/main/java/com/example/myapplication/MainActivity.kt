@@ -25,6 +25,7 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import java.text.DateFormat
 import java.util.*
 import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity() {
@@ -41,6 +42,12 @@ class MainActivity : AppCompatActivity() {
 
         weatherText = findViewById(R.id.weatherText)
         fetchWeatherButton = findViewById(R.id.fetchWeatherButton)
+
+        val calendar = Calendar.getInstance().time
+        val dateFormat = DateFormat.getDateInstance(DateFormat.FULL).format(calendar)
+
+        val dateTextView = findViewById<TextView>(R.id.xml_text_date)
+        dateTextView.text = dateFormat
 
         // Rotate Icon
         val ivIcon = findViewById<ImageView>(R.id.ivIcon)
@@ -139,7 +146,7 @@ class MainActivity : AppCompatActivity() {
                 json.getJSONArray("weather").getJSONObject(0).getString("description")
 
 
-            weatherText.text = "Aktuelles Wetter: $temperature°C, $weather"
+            weatherText.text = "Wetterabfrage: $temperature°C, $weather"
         }
     }
     companion object {
