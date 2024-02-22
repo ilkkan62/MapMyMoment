@@ -35,7 +35,6 @@ class NoteAdapter(var context: Context, var notes: List<Note>): BaseAdapter() {
         var view = convertView
         val holder: ViewHolder
 
-
         if (convertView == null) {
             view = inflater.inflate(R.layout.list_item_view, parent, false)
             holder = ViewHolder()

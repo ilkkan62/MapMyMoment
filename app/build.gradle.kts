@@ -45,10 +45,10 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.8.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
     implementation("com.google.android.gms:play-services-location:21.1.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:1.6.0")
     implementation("com.squareup.okhttp3:okhttp:4.9.0")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0")
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
 
 }

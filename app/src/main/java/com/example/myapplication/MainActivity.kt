@@ -23,7 +23,10 @@ import java.net.URL
 import android.view.View;
 import android.widget.ImageButton;
 import androidx.annotation.Nullable;
-
+import androidx.recyclerview.widget.ItemTouchHelper
+import androidx.recyclerview.widget.RecyclerView
+import java.util.*
+import kotlin.collections.ArrayList
 class MainActivity : AppCompatActivity() {
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
@@ -139,7 +142,6 @@ class MainActivity : AppCompatActivity() {
             weatherText.text = "Aktuelles Wetter: $temperature°C, $weather"
         }
     }
-
     companion object {
         private const val REQUEST_LOCATION_PERMISSION = 1
     }

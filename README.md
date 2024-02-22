@@ -1,8 +1,7 @@
 # MapMyMoment
 
-* Ilkkan Alphan
-
-MapMyMoment ist eine einfache Android-App, die es Benutzern ermöglicht, Notizen, Bilder und Videos mit spezifischen Standortdaten zu verknüpfen. Alternativ können Sie den Darkmode auch verwenden. Teilen auch Sie, den Moment ihres Lebens!
+MapMyMoment ist eine einfache Android-App, die es Benutzern ermöglicht, Notizen, Bilder mit spezifischen Standortdaten zu verknüpfen. 
+Teilen auch Sie, den Moment ihres Lebens!
 
 ## Technologien
 
@@ -15,9 +14,9 @@ Dieses Projekt nutzt eine Reihe moderner Technologien und Praktiken:
 
 ## Screen-Design
 
-![Hauptbildschirm](https://i.postimg.cc/Jzc18zzH/Mainscreen.png)
-![Notizenliste](https://i.postimg.cc/LX7SDqNw/Notizenliste.png)
-![Notizenbearbeitung](https://i.postimg.cc/pdcyNLsY/Notizenbearbeitung.png)
+![Hauptbildschirm](https://i.postimg.cc/VvBmskRc/mmm1.png)
+![Notizenliste](https://i.postimg.cc/V6q3nHbq/mmm2.png)
+![ErstellungNotiz](https://i.postimg.cc/C5M6DM00/mmm3.png)
 
 ## Installation
 
@@ -31,24 +30,7 @@ Den korrekten Pfad zur SDK in **local.properties** eintragen (jeweiligen Pfad ä
 sdk.dir=C\:\\Users\\BENUTZERNAME\\AppData\\Local\\Android\\Sdk
 ```
 
-Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und GPS Features funktionieren kann.
-
-
-
-## Starten der Applikation
-
-Vor dem Starten der App, empfehlen wir den Storage und Cache für die App "MapSnap" zu löschen.
-
-Hierzu navigieren Sie bitte zu: 
-**Settings** >> **Apps & notifications** >> **MapMyMoment**
-
-1. Klicken Sie auf **Force Stop**
-2. Navigieren Sie zu **Storage and Cache**
-3. Klicken Sie auf **Clear Storage** und anschließend auf **clear cache** (siehe Screenshot)
-![Cache und Stroge löschen](https://i.postimg.cc/WpXm6zdN/mapsnap-cache.png)
-4. Nun können Sie die App eindwandfrei starten
-
-
+Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und das GPS Feature funktionieren kann.
 
 ## Kontakt
 
