@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.provider.MediaStore
 import android.content.Intent
 import android.app.Activity
+import android.graphics.Bitmap
 
 private const val PICK_IMAGE_REQUEST = 1
 
@@ -52,14 +53,10 @@ class NoteAdapter(var context: Context, var notes: List<Note>): BaseAdapter() {
         holder.message.text = note.message
         holder.location.text = "Latitude: ${note.latitude}, Longitude: ${note.longitude}"
 
-        // Image lt. Pfad hinzufügen
-        val bitmap = BitmapFactory.decodeFile(note.image)
-        holder.imageView.setImageBitmap(bitmap)
-
-        // Für Imagepicker
-        holder.imageView.setOnClickListener {
-            val pickImage = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-            (context as Activity).startActivityForResult(pickImage, PICK_IMAGE_REQUEST)
+        // Image aus Bytearray hinzufügen
+        if(note.image != null && note.image!!.size > 0) {
+            val bmap: Bitmap = BitmapFactory.decodeByteArray(note.image, 0, note.image!!.size)
+            holder.imageView.setImageBitmap(bmap)
         }
 
         return view

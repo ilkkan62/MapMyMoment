@@ -21,6 +21,10 @@ import android.graphics.BitmapFactory
 import android.widget.ImageView
 import android.provider.MediaStore
 import android.content.Intent
+import android.graphics.Bitmap
+import android.view.View
+import androidx.core.graphics.drawable.toBitmap
+import java.io.ByteArrayOutputStream
 
 class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
 
@@ -96,8 +100,11 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
             etMessage?.setText(note?.message)
             latitude = note?.latitude ?: 0.0
             longitude = note?.longitude ?: 0.0
-            val bitmap = BitmapFactory.decodeFile(note?.image)
-            ivNoteImage.setImageBitmap(bitmap)
+
+            if(note?.image != null && note?.image!!.size > 0) {
+                val bmap: Bitmap = BitmapFactory.decodeByteArray(note?.image, 0, note?.image!!.size)
+                ivNoteImage.setImageBitmap(bmap)
+            }
 
         }
 
@@ -106,14 +113,24 @@ class NoteEditActivity : AppCompatActivity(), DialogInterface.OnClickListener {
             val title = etTitle?.text.toString()
             val message = etMessage?.text.toString()
 
+            var bmapByteArray:ByteArray = ByteArray(0)
+            if(ivNoteImage.drawable != null) {
+                val bmap: Bitmap = ivNoteImage.drawable.toBitmap()
+                val stream = ByteArrayOutputStream()
+                bmap.compress(Bitmap.CompressFormat.JPEG, 70, stream)
+                bmapByteArray = stream.toByteArray()
+            }
+
             if (note != null) {
+
                 note!!.title = title
                 note!!.message = message
                 note!!.latitude = latitude
                 note!!.longitude = longitude
+                note!!.image = bmapByteArray
                 noteDao?.update(note!!)
             } else {
-                noteDao!!.insertAll(Note(title, message, latitude, longitude, ""))
+                noteDao!!.insertAll(Note(title, message, latitude, longitude,  bmapByteArray))
             }
 
             // Show toast for user

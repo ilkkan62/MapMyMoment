@@ -36,10 +36,12 @@
 
     <ImageView
         android:id="@+id/ivNoteImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_margin="@dimen/margin_medium"
-        android:scaleType="fitXY" />
+        android:src="@drawable/upload"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center" />
 
     <Button
         android:id="@+id/btnSave"
@@ -49,11 +51,5 @@
         android:text="@string/save"
         style="@style/Button"/>
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/upload" />
 
 </LinearLayout>
