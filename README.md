@@ -31,7 +31,3 @@ sdk.dir=C\:\\Users\\BENUTZERNAME\\AppData\\Local\\Android\\Sdk
 
 Damit die Wetter und das GPS Feature funktionieren können, muss für das Emulated Device manuell eine Location gesetzt werden.
 
-## Kontakt
-
-Für weitere Fragen oder Feedback kontaktieren Sie uns bitte unter [i.alphan@hotmail.com](mailto:i.alphan@hotmail.com).
-
