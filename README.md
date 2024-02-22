@@ -5,9 +5,12 @@
 MapMyMoment ist eine einfache Android-App, die es Benutzern ermöglicht, Notizen und Bilder mit spezifischen Standortdaten zu verknüpfen. 
 Teilen auch Sie, den Moment ihres Lebens!
 
-## Technologien
+## Key-Features
 
-Dieses Projekt nutzt eine Reihe moderner Technologien und Praktiken:
+- **Standortbezogene Notiz inkl. Foto und Datum erstellen**
+- **Einfache Bedienung**
+
+## Technologien
 
 - **Kotlin:** Die gesamte App ist in Kotlin geschrieben.
 - **Android Jetpack:** Für eine robuste und wartbare App-Architektur.
@@ -26,7 +29,7 @@ Den korrekten Pfad zur SDK in **local.properties** eintragen (jeweiligen Pfad ä
 sdk.dir=C\:\\Users\\BENUTZERNAME\\AppData\\Local\\Android\\Sdk
 ```
 
-Für das Emulated Device muss eine Location gesetzt werden, damit die Wetter und das GPS Feature funktionieren kann.
+Damit die Wetter und das GPS Feature funktionieren können, muss für das Emulated Device manuell eine Location gesetzt werden.
 
 ## Kontakt
 
