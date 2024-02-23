@@ -9,6 +9,7 @@ Teilen auch Sie, den Moment ihres Lebens!
 
 - **Standortbezogene Notiz inkl. Foto und Datum erstellen**
 - **Einfache Bedienung**
+- **Step Counter**
 
 ## Technologien
 
